@@ -17,7 +17,6 @@ public class Driver
         printMatrix(B.element);
         Matrix C = Driver.performOP(A,B);
         System.out.println(C.toString());
-        alphaOGStud();
 
     }
 
@@ -98,11 +97,6 @@ public class Driver
     {
         System.out.println(Arrays.deepToString(x)
                 .replace("], ", "]\n").replace("[[", "[").replace("]]", "]"));
-    }
-
-    static void alphaOGStud()
-    {
-        System.out.println("\nPretty OG matrix you got there, dawg. Very alpha!\n");
     }
 
 
