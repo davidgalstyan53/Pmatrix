@@ -75,7 +75,7 @@ public class Driver
             if(!isvalid)
             {
                 System.out.println("\nInvalid input? Tisk-tisk...\n"
-                        + "Have yourself a Sugar-Free Red Bull, and let's start over...");
+                        + "Have yourself a Sugar-Free Red Bull, then let's start over...");
                 A = getMatrix("1st Matrix");
                 System.out.println(Arrays.deepToString(A.element)
                         .replace("], ", "]\n").replace("[[", "[").replace("]]", "]"));
