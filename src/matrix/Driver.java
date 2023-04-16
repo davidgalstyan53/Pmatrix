@@ -17,6 +17,7 @@ public class Driver
         printMatrix(B.element);
         Matrix C = Driver.performOP(A,B);
         System.out.println(C.toString());
+		System.out.println("Exiting program");
 
     }
 
