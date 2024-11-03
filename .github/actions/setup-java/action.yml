@@ -1,0 +1,17 @@
+name: Setup Java
+description: Set up Java environment
+inputs:
+  java-version:
+    description: 'Java version to use'
+    required: true
+  distribution:
+    description: 'Java distribution to use'
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - name: Set up Java
+      uses: actions/setup-java@v3
+      with:
+        java-version: ${{ inputs.java-version }}
+        distribution: ${{ inputs.distribution }}

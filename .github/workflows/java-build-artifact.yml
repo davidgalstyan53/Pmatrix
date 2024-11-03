@@ -1,0 +1,32 @@
+name: Java Build and Artifact
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run Checkout Code Action
+        uses: ./.github/actions/checkout-code
+
+      - name: Run Setup Java Action
+        uses: ./.github/actions/setup-java
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Run Build Project Action
+        uses: ./.github/actions/build-project
+
+      - name: Run Upload Artifact Action
+        uses: ./.github/actions/upload-artifact
