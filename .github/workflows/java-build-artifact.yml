@@ -3,7 +3,7 @@ name: Java Build and Artifact
 on:
   push:
     branches:
-      - master
+      - user**
   pull_request:
     branches:
       - master
