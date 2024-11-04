@@ -1,0 +1,10 @@
+name: Build Project
+description: Compile the Java project
+runs:
+  using: "composite"
+  steps:
+    - name: Build project
+      shell: bash
+      run: |
+        # Compile the Java files using javac no jar.
+        javac -d out src/matrix/*.java
